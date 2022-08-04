@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+.display {
+    display: block;
+}
+section {
+    display: none;
+    height: 300px;
+    width: 100%;
+}
+img {
+    float: right;
+    height: 80vh;
+    position: relative;
+    object-fit: fit;
+    top: -400px;
+    max-width: 700px;
+    border: 3px dashed #198ce6;
+}
+body {
+    background: black;
+    color: white;
+    font-family: Raleway;
+    margin: 100px 60px;
+}
+h1 {
+    font-size: 70px;
+    --fill-color: #198ce6;
+    -webkit-text-stroke: 2px var(--fill-color);
+    color: transparent;
+}
+p {
+    max-width: 400px;
+}
+.buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    list-style-type: none;
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+    margin: 50px auto;
+}
+.buttons button {
+    border: none;
+    padding: 6px 0;
+    --fill-color: #198ce6;
+    position: relative;
+    display: block;
+    padding: 4px 0;
+    font: 700 3rem Raleway, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px var(--fill-color);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, var(--fill-color))) left/0 no-repeat;
+    background: linear-gradient(var(--fill-color) 0 100%) left/0 no-repeat;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-transition: 0.5s linear;
+    transition: 0.5s linear;
+}
+.buttons button:hover {
+    background-size: 100%;
+}
+
+@media (max-width: 1000px){
+    img {
+       display: block;
+       position: static;
+    }
+}
